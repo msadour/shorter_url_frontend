@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shorter URL</title>
+    </head>
+    <body>
+
+        <h1>Welcome to shorter URL app</h1>
+
+        <form class="form" action="" method="post">
+            <input type="text" name="url_input" id="url_input" >
+            <input type="button" onclick="return createUrl();" value="Send">
+        </form>
+
+        <br /><br /><br />
+
+        <table id="table_urls" border="1" style="width=50%">
+            <tr>
+                <td>URL</td>
+                <td>Shorter URL</td>
+            </tr>
+        </table>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="handle_api.js"></script>
+
+    </body>
+</html>
